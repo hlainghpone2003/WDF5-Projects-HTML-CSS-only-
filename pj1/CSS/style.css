@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	/* scroll-behavior: smooth; */
 }
 
 :root {
@@ -183,7 +184,6 @@ body {
 	transition: all 0.7s ease;
 }
 
-.nav_list:hover .drop_down,
 .nav_list:hover .mega_box {
 	visibility: visible;
 	top: 100px;
@@ -191,8 +191,7 @@ body {
 	transition: all 0.5s ease;
 }
 
-.row .mega_link:hover,
-.drop_down_link:hover {
+.row .mega_link:hover {
 	color: #f2f2f2;
 }
 
@@ -738,11 +737,17 @@ details summary {
 
 .faq_text {
 	margin: 10px;
+	line-height: 25px;
+	text-align: justify;
 }
 
 .faq_list {
 	display: block;
 	padding: 10px;
+}
+
+.faq_list li {
+	margin: 15px 0;
 }
 
 .service_section {
@@ -812,7 +817,7 @@ details summary {
 .destination {
 	width: 1350px;
 	margin: auto;
-	box-shadow: 3px 3px 30px #000;
+	box-shadow: 3px 3px 30px #193764, 5px 5px 40px #000;
 
 	background: linear-gradient(45deg, #eee, #fff);
 }
@@ -825,6 +830,7 @@ details summary {
 
 .destination_heading h1 {
 	margin: 0 0 20px 0;
+	padding-top: 20px;
 	font-size: 45px;
 }
 
@@ -850,20 +856,54 @@ details summary {
 	font-size: 20px;
 	margin: 40px 0 0 0;
 
-	text-align: right;
+	text-align: left;
 }
 
-.det_text:nth-child(2) {
-	text-align: left;
+.det_text:nth-child(1) {
+	text-align: right;
 }
 
 .det_text > h1 {
 	margin: 0 0 20px 0;
 }
 
+.det_text > a {
+	text-decoration: none;
+	font-size: 23px;
+	color: #000;
+	position: relative;
+
+	transition: color 1s ease-in;
+}
+
+.det_text > a:hover {
+	color: #3289be;
+}
+
+.det_text > a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 100%;
+	height: 3px;
+
+	background: #00b4c0;
+
+	transform: scaleX(0.1);
+	transform-origin: left;
+	transition: transform 0.5s linear;
+}
+
+.det_text > a:hover::after {
+	transform: scaleX(1);
+}
+
 .det_img {
 	flex: 2;
 	margin: 0 20px 0 10px;
+	cursor: pointer;
 }
 
 .footer {
@@ -1046,10 +1086,20 @@ details summary {
 
 	padding: 15px;
 
-	background: #363636;
+	background: #35557a;
 	border-radius: 10px;
 
 	font-family: "Crete Round", serif;
+}
+
+.footer_contact_btn::after {
+	transform: scale(0);
+	transform-origin: top center;
+	border-radius: 10px;
+}
+
+.footer_contact_btn:hover::after {
+	transform: scale(1);
 }
 
 .footer_contact_btn > i {
