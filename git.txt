@@ -1,1 +1,1 @@
-git remote add origin git@github.com:hlainghpone2003/WDF5-Projects.git
+git remote add origin https://github.com/hlainghpone2003/WDF5Projects.git
