@@ -35,10 +35,10 @@
 							<a class="nav_link active" href="">Home</a>
 						</li>
 						<li class="nav_list">
-							<a class="nav_link" href="">Packages</a>
+							<a class="nav_link" href="#pk">Packages</a>
 						</li>
 						<li class="nav_list">
-							<a class="nav_link" href="">Destination</a>
+							<a class="nav_link" href="#det_link">Destination</a>
 						</li>
 						<li class="nav_list">
 							<a class="nav_link" href="">Itinerary</a>
@@ -61,10 +61,10 @@
 										</header>
 										<ul class="mega_nav">
 											<li class="mega_nav_links">
-												<a href="" class="mega_link">Location</a>
+												<a href="" class="mega_link">Partners</a>
 											</li>
 											<li class="mega_nav_links">
-												<a href="" class="mega_link">Partners</a>
+												<a href="" class="mega_link">Reviews</a>
 											</li>
 											<li class="mega_nav_links">
 												<a href="" class="mega_link">Terms and Conditions</a>
@@ -104,7 +104,7 @@
 												<a href="" class="mega_link">Hotel Contact</a>
 											</li>
 											<li class="mega_nav_links">
-												<a href="" class="mega_link">Hotels</a>
+												<a href="" class="mega_link">Hotels Reviews</a>
 											</li>
 										</ul>
 									</div>
@@ -112,7 +112,7 @@
 							</div>
 						</li>
 						<li class="nav_list">
-							<a class="nav_link" href="">About</a>
+							<a class="nav_link" href="#aboutus_link">About</a>
 						</li>
 						<li class="nav_list">
 							<a class="nav_link" href="">Contact</a>
@@ -132,7 +132,7 @@
 				</div>
 			</div>
 			<div class="packages_section">
-				<h1>Our Tours Packages</h1>
+				<h1 id="pk">Our Tours Packages</h1>
 				<div class="local_pk"><h3>Local Packages</h3></div>
 				<div class="pk_row">
 					<div class="col">
@@ -302,7 +302,7 @@
 			</div>
 			<div class="about_section">
 				<div class="aboutus">
-					<h1>About US</h1>
+					<h1 id="aboutus_link">About US</h1>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
 						aspernatur qui ad ea vitae tempora, temporibus autem voluptatem! Ad,
@@ -624,7 +624,7 @@
 				</div>
 			</div>
 
-			<div class="destination_section">
+			<div id="det_link" class="destination_section">
 				<div class="destination">
 					<div class="destination_heading">
 						<h1>Destinations to travel in Myanmar</h1>
@@ -687,7 +687,7 @@
 						<li class="footer_link"><a href="">About Myanmar</a></li>
 						<li class="footer_link"><a href="">Festival in Myanmar</a></li>
 						<li class="footer_link"><a href="">Hotel info</a></li>
-						<li class="footer_link"><a href="">Packages</a></li>
+						<li class="footer_link"><a href="#pk">Packages</a></li>
 						<li class="footer_link"><a href="">Services</a></li>
 					</ul>
 				</div>
@@ -732,6 +732,7 @@
 							id=""
 							class="footer_text_input contact_email"
 							placeholder="Your email address........"
+							autocomplete="off"
 						/>
 						<br />
 						<textarea
