@@ -1195,5 +1195,5 @@ details summary {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: hsla(120, 100%, 10%, 0.5);
+	background: linear-gradient(0deg, rgb(125, 180, 214), #2098e2);
 }
