@@ -297,7 +297,7 @@ body {
 
 .btn_group {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 .btn {
 	position: relative;
